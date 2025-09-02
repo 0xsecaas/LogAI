@@ -1,4 +1,3 @@
-
 # Local LLM System Log Analyzer - Lightweight SRS
 
 ## 1. Purpose
@@ -23,6 +22,9 @@ Privacy-preserving; no data leaves the device.
   - Security recommendations (LLM + rule-based).
 - Lightweight, <2 GB RAM usage, near-instant responses.
 - Community-driven open-source project.
+
+## Usage
+`copy_logs.py` is the only part of this application that must be executed with admin level or root access because it reads the system logs and copies them to a local `./data` directory to further process it for the purpose of the application.
 
 ## Tech
 - **Input:** `/var/log/*`, `journalctl`, dmesg.  
